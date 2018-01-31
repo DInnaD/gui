@@ -1,0 +1,351 @@
+.features {
+  background: url("../img/diagonal-bkg.svg") no-repeat 0 130px;
+  background-size: 200% 100%;
+
+  @media (min-width: @screen--small) {
+    background: url("../img/diagonal-bkg.svg") no-repeat 0 180px;
+    background-size: 150% 50%;
+  }
+  @media (min-width: @screen--medium) {
+    background: url("../img/diagonal-bkg.svg") no-repeat 0 240px;
+    background-size: 100% 100%;
+  }
+
+  &-item {
+    margin-bottom: 67px;
+
+    text-align: center;
+    min-width: @screen--mobile;
+
+    @media (min-width: @screen--medium) {
+      margin-left: 55px ;
+    }
+
+    &:first-child:before {
+      display: none;
+
+      @media (min-width: @screen--medium) {
+        content: "";
+        display: block;
+        height: 300px;
+
+        background: url("../img/iphone-screen-2-1@1x.png") no-repeat 50% 0;
+      }
+
+    }
+    &:nth-child(2):before {
+      display: none;
+
+      @media (min-width: @screen--medium) {
+        content: "";
+        display: block;
+        height: 300px;
+        background: url("../img/iphone-screen-2-2@1x.png") no-repeat 50% 0;
+      }
+
+    }
+    &:last-child:before {
+      display: none;
+
+      @media (min-width: @screen--medium) {
+        content: "";
+        display: block;
+        height: 300px;
+        background: url("../img/iphone-screen-2-3@1x.png") no-repeat 50% 0;
+      }
+
+    }
+
+  }
+  &__inner {
+    min-width: @screen--mobile;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (min-width: @screen--small) {
+      width: @screen--small;
+
+    }
+
+    @media (min-width: @screen--medium) {
+      width: @screen--medium;
+
+    }
+
+    @media (min-width: @screen--big) {
+      width: @screen--big;
+
+    }
+  }
+
+  &--h2formmob {
+    font-family: "Open Sans Light", sans-serif;
+    font-size: 24px;
+    line-height: 1.3em;
+    display: block;
+    color: #283645;
+    text-align: center;
+    margin-bottom: 116px;
+
+    @media (min-width: @screen--small) {
+      display: none;
+
+    }
+
+    @media (min-width: @screen--medium) {
+      display: none;
+    }
+
+    @media (min-width: @screen--big) {
+      display: none;
+    }
+  }
+  &--h2 {
+    display: none;
+    font-family: "Open Sans Light", sans-serif;
+    font-size: 40px;
+    line-height: 1.3em;
+    color: #283645;
+    text-align: center;
+    margin-bottom: 54px;
+
+    @media (min-width: @screen--small) {
+      display: block;
+
+    }
+
+    @media (min-width: @screen--medium) {
+      display: block;
+      font-size: 50px;
+
+    }
+
+    @media (min-width: @screen--big) {
+      display: block;
+      font-size: 50px;
+      margin-bottom: 54px;
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    @media (min-width: @screen--small) {
+      flex-direction: column;
+    }
+
+    @media (min-width: @screen--medium) {
+      flex-direction: row;
+      padding-right: 90px;
+    }
+
+    @media (min-width: @screen--big) {
+      flex-direction: row;
+      padding-right: 90px;
+    }
+  }
+  &-item--h2 {
+    font-family: "Open Sans Bold", sans-serif;
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width: @screen--small) {
+      text-align: left;
+
+    }
+    @media (min-width: @screen--medium) {
+      font-size: 30px;
+      text-align: center;
+      width: 227px;
+      margin: 53px auto 28px;
+    }
+
+    @media (min-width: @screen--big) {
+      font-size: 30px;
+    }
+  }
+
+  &-item--text {
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #283645;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+
+    @media (min-width: @screen--small) {
+      text-align: left;
+
+    }
+    @media (min-width: @screen--medium) {
+      text-align: center;
+      font-size: 18px;
+      margin: 0 auto;
+      width: 236px;
+
+    }
+    @media (min-width: @screen--big) {
+      font-size: 18px;
+      text-align: center;
+      margin: 0 auto;
+      width: 236px;
+    }
+  }
+  &-item:last-child &-item--text:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 42px;
+    margin-bottom: 48px;
+    height: 280px;
+    background: url("../img/iphone-screen-2-3@1x.png") no-repeat 50% 50%;
+    background-size: contain;
+
+    @media (min-width: @screen--small) {
+      display: none;
+    }
+
+  }
+  &-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  &-section:before {
+    display: none;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: @screen--small) {
+      content: "";
+      display: block;
+      margin: 0 40px 0 0;
+      height: 481px;
+      width: 268px;
+      background: url("../img/iphone-screen-1-1@1x.png") no-repeat;
+    }
+    @media (min-width: @screen--medium) {
+      display: none;
+    }
+
+  }
+  &-research {
+    display: flex;
+    flex-direction: row;
+    background: #FFF;
+
+    @media (min-width: @screen--medium) {
+      min-width: @screen--medium;
+      max-width: @screen--big -1 ;
+      background: #f2f2f2;
+    }
+    @media (min-width: @screen--big) {
+      min-width: @screen--big;
+
+    }
+
+    &-clock {
+      width: 300px;
+      margin: 0 auto;
+      @media (min-width: @screen--small) {
+        width: 700px;
+        padding-left: 47px;
+      }
+      @media (min-width: @screen--medium) {
+        width: 1200px;
+        padding-left: 65px;
+      }
+
+
+    }
+    &:before {
+      display: none;
+      @media (min-width: @screen--small) {
+        content: "";
+        display: block;
+        background: url("../img/clock.png") no-repeat;
+        height: 346px;
+        width: 600px;
+        margin-left: 0;
+
+      }
+      @media (min-width: @screen--medium) {
+        margin-left: 80px;
+        width: 500px;
+
+      }
+      @media (min-width: @screen--big) {
+        width: 405px;
+        margin-left: 180px;
+      }
+      }
+
+
+    &--h2 {
+      display: none;
+      text-align: left;
+      @media (min-width: @screen--small) {
+        display: block;
+        font-family: "Open Sans Bold", sans-serif;
+        font-size: 30px;
+        line-height: 1.3em;
+        color: #000;
+        margin-bottom: 16px;
+        width: 170px;
+      }
+      @media (min-width: @screen--medium) {
+        margin-bottom: 30px;
+        width: 300px;
+      }
+    }
+
+    &--researchtext {
+      display: none;
+      text-align: left;
+      @media (min-width: @screen--small) {
+        display: block;
+        font-family: "Open Sans Regular", sans-serif;
+        font-size: 14px;
+        line-height: 1.4em;
+        color: #283645;
+        margin-bottom: 18px;
+      }
+      @media (min-width: @screen--medium) {
+        font-size: 18px;
+        margin-bottom: 41px;
+        width: 520px;
+      }
+    }
+
+    &--a {
+      display: none;
+      text-align: left;
+
+      @media (min-width: @screen--small) {
+        display: block;
+        font-family: "Open Sans Regular", sans-serif;
+        font-size: 14px;
+        line-height: 1.3em;
+        color: #d22856;
+      }
+      @media (min-width: @screen--medium) {
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+
+
+
